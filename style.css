@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #EBEBEB;
+    min-height: 100vh;
+}
+
+.completed { /*this is the formatting when we click on the completed button*/
+    background-color: #7E9E87;
+    opacity: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    border-radius: .3rem;
+    background: #EBEBEB;
+}
+
+.text-container {
+    padding: 3rem;
+    background-image: url(./book-wall-1151405_1280.jpg);
+    background-size: cover;
+    opacity: 90%;
+    text-align: center;
+}
+
+.text-container h1, .text-container p {
+    background-color: #EBEBEB;
+    opacity: 75%;
+    line-height: 1.5rem;
+}
+
+.text-container h1 {
+    padding-bottom: .7rem;
+}
+
+form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: 3rem 0;
+    background: rgb(210,165,69);
+    background: linear-gradient(0deg, rgba(210,165,69,1) 0%, rgba(223,215,201,1) 50%);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.63);
+    -moz-box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.63);
+    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.63);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+
+label {
+    margin-bottom: .3rem;
+}
+
+#short-story, #thoughts {
+    height: 4rem;
+}
+
+button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    background-color: #D1D4BE;
+}
+
+#add-button {
+    align-self: center;
+    margin-top: 2rem;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border: rgb(210,165,69) solid 1px;
+}
+
+.book-list button {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 100%;
+    }
+}
